@@ -1,4 +1,3 @@
-// Function for fading in and out the nav bar
 $(function() {
      $(window).scroll(function() {
           var $this = $(window);
