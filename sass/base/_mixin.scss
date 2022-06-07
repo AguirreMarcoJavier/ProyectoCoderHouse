@@ -6,7 +6,6 @@
   align-items: $a-items;
 }
 
-// Container and media query variables
 $grid-breakpoints: (
 xs: 0,
 sm: 544px,
@@ -15,13 +14,11 @@ lg: 992px,
 xl: 1200px
 ) !default;
 
-// Bootstrap responsive mixin
 @function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
 $min: map-get($breakpoints, $name);
 @return if($min != 0, $min, null);
 }
 
-// Break up points that make a min width media query
 @mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
 $min: breakpoint-min($name, $breakpoints);
 @if $min {
@@ -32,9 +29,6 @@ $min: breakpoint-min($name, $breakpoints);
  @content;
 }
 }
-
-
-//Box -shadow
 
 
 @mixin shadow() {

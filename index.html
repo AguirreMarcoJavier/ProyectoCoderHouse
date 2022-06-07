@@ -52,7 +52,7 @@
       </header>
       <main>
         <div class="content-wrapper" id="about">
-          <img src="./dist/img/city2.png" alt="City2" class="img-absolute">
+          <img id="fondo2" src="./dist/img/city2.png" alt="City2" class="img-absolute">
           <div class="grid">
             <div class="grid-col-sm-12 grid-col-md-6 astonish" data-animated="fadeInLeft">
               <h2 class="section-title">Acerca de Grupo Travel</h2>
@@ -64,31 +64,22 @@
         </div>
         <div id="reserve" class="content-wrapper-lg text-center astonish" data-animated="zoomIn">
           <h2 class="section-title">Explorar nuevos paquetes</h2>
-          <div class="resumen">
-            <div class="cartas">
-                <img src="http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSvFzaAumI-1_ww5mNE2n6sBJJc11rUklqknnbi0VodEOmxFIOKFWhkoA0zm2gQTdWk" alt="Rio">
-                <h4>Paquete Rio de Janeiro</h4>
-                <p>Este paquete constaría de 3 noches y 4 días para toda la familia</p>
-                <p>Incluyendo pensión, paseos turisticos y regalos por parte de la empresa</p>
-                <a href="#">Leer Mas</a>
+          <div class="card d-flex justify-content-between">
+            <div class="car d-body">
+              <h5 class="card-title">Paquete Rio de Janeiro</h5>
+              <p class="card-text">Este paquete constaría de 3 noches y 4 días para toda la familia</p>
+              <a  href="#contact" class="btn btn-outline-purple"> Dame este paquete </a>
             </div>
-             <div class="cartas">
-                <img src="https://www.viajaraitalia.com/wp-content/uploads/2012/05/Coliseo-de-Roma-abril-2007.jpg" alt="Roma">
-                <h4>Paquete Roma</h4>
-                <p>Si te gusta el fideo con salsa, podrías considerar venirte a nuestras instalaciones en Roma</p>
-                <p>Contamos con góndolas propias y un precioso amanecer artificial en nuestros hoteles</p>
-                <a href="#">Leer Mas</a>
-            </div>       
-            <div class="cartas">
-                <img src="https://elgiroscopo.es/wp-content/uploads/2019/09/hobbiton_nueva_zelanda.jpg" alt="Nueva Zelanda">
-                <h4>Paquete 3</h4>
-                <p>Si querés ser el Frodo de tu historia, podés pegarte una escapada en nuestras instalaciones de Nueva Zelanda</p>
-                <p>Acá contamos con un equipo de maquilladores, productores y editores para que hagas el diálogo favorito que quieras</p>
-                <a href="./antiguo_codigo/pages/eventos.html">Leer Mas</a>
-            </div>    
-          <p>Ofrecemos el precio más competitivo</p>
-          <br>
-          <a  href="#contact" class="btn btn-outline-purple"> Contáctate </a>
+            <div class="car d-body">
+              <h5 class="card-title">Paquete Roma</h5>
+              <p class="card-text">Si te gusta el fideo con salsa, podrías considerar venirte a nuestras instalaciones en Roma</p>
+              <a  href="#contact" class="btn btn-outline-purple"> Quiero este paquete </a>
+            </div>
+            <div class="car d-body">
+              <h5 class="card-title">Paquete Nueva Zelanda</h5>
+              <p class="card-text">Si querés ser el Frodo de tu historia, podés pegarte una escapada en nuestras instalaciones de Nueva Zelanda</p>
+              <a  href="#contact" class="btn btn-outline-purple"> Necesito este paquete </a>
+            </div>
         </div>
         <div id="contact" class="content-wrapper">
           <img src="./dist/img/city3.png" alt="" class="img-absolute">

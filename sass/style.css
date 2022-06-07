@@ -39,8 +39,6 @@
   max-width: 960px;
 }
 
-/* A flex grid to be used as a backup in case display grid
-   is not supported in the browser. */
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -286,8 +284,6 @@
   }
 }
 
-/* If the grid is supported then I will use that, if not then
-the display flex can serve as a backup. */
 @supports (display: grid) {
   .grid {
     display: -ms-grid;
@@ -432,8 +428,6 @@ the display flex can serve as a backup. */
   }
 }
 
-/* Paleta de colores */
-/* Font family */
 * {
   font-family: "Roboto", sans-serif;
   -webkit-box-sizing: border-box;
@@ -442,7 +436,7 @@ the display flex can serve as a backup. */
 
 body {
   font-weight: 300;
-  color: #fefffe;
+  color: #ffffff;
   background: #111;
 }
 
@@ -519,7 +513,7 @@ button, .btn {
 
 .btn-outline-teal:hover {
   background-color: #00d8b2;
-  color: #fff;
+  color: #b1dbff;
 }
 
 .btn-outline-purple {
@@ -529,7 +523,7 @@ button, .btn {
 
 .btn-outline-purple:hover {
   background-color: #5458ff;
-  color: #fff;
+  color: #b1dbff;
 }
 
 h1 {
@@ -622,7 +616,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 0.2rem;
   left: 0.8rem;
-  color: #fefffe;
+  color: #ffffff;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   z-index: -1;
@@ -643,7 +637,7 @@ h1, h2, h3, h4, h5, h6 {
 #menu-button .bar1, #menu-button .bar2, #menu-button .bar3 {
   width: 35px;
   height: 3px;
-  background-color: #fefffe;
+  background-color: #ffffff;
   margin: 6px 0;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -707,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav .navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fff;
+  color: #b1dbff;
   text-decoration: none;
 }
 
@@ -738,7 +732,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-nav .nav-links li a {
-  color: #fefffe;
+  color: #ffffff;
   display: block;
   text-decoration: none;
 }
@@ -778,7 +772,7 @@ h1, h2, h3, h4, h5, h6 {
 header {
   position: relative;
   height: 100vh;
-  color: #fff;
+  color: #b1dbff;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -830,6 +824,8 @@ header h2 {
      object-fit: cover;
   opacity: 0.8;
   z-index: -1;
+  -webkit-filter: brightness(25%);
+          filter: brightness(25%);
 }
 
 #map {
@@ -865,7 +861,6 @@ footer .social-links ul li {
 
 footer .social-links ul li a {
   font-size: 1.5rem;
-  color: #fefffe;
+  color: #ffffff;
   display: block;
 }
-/*# sourceMappingURL=style.css.map */

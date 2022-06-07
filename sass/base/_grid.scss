@@ -1,5 +1,3 @@
-/* A flex grid to be used as a backup in case display grid
-   is not supported in the browser. */
    .grid {
     display: flex;
     flex-wrap: wrap;
@@ -170,8 +168,6 @@
     }
 }
 
-/* If the grid is supported then I will use that, if not then
-the display flex can serve as a backup. */
 @supports (display: grid) {
     .grid {
          display: grid;
